@@ -7,6 +7,7 @@ set(project_name hls-example) ## rename your project here
 project(${project_name})
 
 set(CMAKE_CXX_STANDARD 11)
+add_compile_options(-g)
 
 add_library(${project_name}-lib
         src/AppComponent.hpp

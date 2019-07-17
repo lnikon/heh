@@ -71,7 +71,7 @@ public:
   }());
   
   OATPP_CREATE_COMPONENT(std::shared_ptr<Playlist>, livePlayList)([] {
-    auto playlist = Playlist::parseFromFile(EXAMPLE_MEDIA_FOLDER "/playlist_live.m3u8" /* path to '<this-repo>/Media-Stream/video/playlist_live.m3u8' file. Put full, absolute path here */);
+    auto playlist = Playlist::parseFromFile(EXAMPLE_MEDIA_FOLDER "/playlist1.m3u8" /* path to '<this-repo>/Media-Stream/video/playlist_live.m3u8' file. Put full, absolute path here */);
     return std::make_shared<Playlist>(playlist);
   }());
 
